@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4e187043c1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://res.cloudinary.com/crunchbas1e-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/udygjet2oudwbzigz5ik">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/a5/3c/59/a53c5901712da82a3f52618f14ab2756.jpg);
+    background-size: 100%;
+    padding-top: 100px;
+}
+table{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(53, 59, 59, 0.227);
+    font-size: 20px;
+    z-index: 11;
+}
+#shopimage{
+    padding-top: 0px;
+    text-align: left;
+    margin-left:10px;
+    width: 230px;
+    height: 75px;
+}
+#image{
+    width:300px;
+    text-align: left;
+}
+.menu{
+    text-align: left;
+    width: 95px;
+}
+.log{
+    width: 70px;
+    text-align: right;
+    margin-right: 10px;
+}
+.menua{
+    text-decoration: none;
+    color:aliceblue
+}
+.loga{
+    text-decoration: none;
+    color:rgb(15, 200, 92)
+}
+.menua :hover{
+    color: rgb(29, 222, 125);
+    text-decoration:underline;
+}
+.loga :hover{
+    color: rgb(231, 242, 7);
+    text-decoration: underline;
+}
+.nav{
+    width: 200px;;
+}
+#payment{
+    margin-top: 10px;;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 60px;
+}
+footer{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.984);
+    width: 100%;
+}
+#copyright,#footerpara{
+    font-size: 18px;
+    margin: 10px;;
+    color: rgba(0, 0, 0, 0.843);
+    display:flex;
+    justify-content: center;
+}
+.slidephoto{
+    height: 500px;
+    width: 950px;
+}
+.slideshow{
+    overflow: hidden;
+    width:50%;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+}
+.slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+#pre-btn{
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    z-index: 10;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    font-size: 30px;
+}
+#next-btn{
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    color: white;
+    z-index: 10;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    font-size: 30px;
+}
+.slidephoto2{
+    height: auto;
+    width: 100%;
+}
+.slideshow2{
+    overflow: hidden;
+    width:79.6%;
+    margin: auto;
+    margin-bottom: 50px;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+}
+.slide2{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+#pre-btn2{
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    z-index: 10;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    font-size: 30px;
+}
+#next-btn2{
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    color: white;
+    z-index: 10;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    font-size: 30px;
+}
+    </style>
+    <title>Shoe Palace</title>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <th id="image"><a href="mainpage.html"><img id="shopimage" src="https://cdn.weartesters.com/wp-content/uploads/2014/07/Shoe-Palace-to-Restock-on-Select-Air-Jordan-Nike-Models1.jpg" alt=""></th>
+                <th class="nav"><a class="menua" href="brands.html"><h3 class="menu">Brands</h3></a></th>
+                <th class="nav"><a class="menua" href="shoe.html"><h3 class="menu">Shoes</h3></a></th>
+                <th class="nav"><a class="menua" href="aboutus.html"><h3 class="menu">About Us</h3></a></th>
+                <th class="nav"><a class="menua" href="location.html"><h3 class="menu">Location</h3></a></th>
+                <th class="log"><a class="loga" href="signin.html" target="_blank"><h3 class="log">Sign in</h3></a></th>
+                <th class="log"><a class="loga" href="login.html" target="_blank"><h3 class="log">Log in</h3></a></th>
+            </tr>
+        </table>
+    </header>
+    <div class="slideshow">
+        <i class="fas fa-arrow-left" id="pre-btn" class="button"></i>
+        <i class="fas fa-arrow-right" id="next-btn" class="button"></i>
+        <div class="slide">
+            <img src="https://cdn.citymapia.com/puma-store/2758/businessbanner.jpg?width=1260&v=20211021055806);" class="slidephoto" id="lastclone">
+            <img src="https://i.pinimg.com/originals/fa/45/96/fa4596ad9a9d39901eeb455ed4f74e44.jpg" class="slidephoto">
+            <img src="https://media.mysport.lv/wysiwyg/Brendu_kategoriju_content_LV/adidas_apavi-baneris.jpg" class="slidephoto">
+            <img src="https://cdn-eu.dynamicyield.com/api/9877111/images/fcb9c3e416ee__jordan_essential_banner.jpg" class="slidephoto">
+            <img src="https://images.ctfassets.net/gscn32h7ckds/ffo2JkDIoLWmqJmml5kVy/c2c647e8273378742d655cba55f91a85/New_Balance_outlet_2022_banner.jpg" class="slidephoto">
+            <img src="https://mogul.ee/wp-content/uploads/2015/02/vans-california-facebook-cover-timeline-banner-for-fb.jpg" class="slidephoto">
+            <img src="https://cdn.citymapia.com/puma-store/2758/businessbanner.jpg?width=1260&v=20211021055806);" class="slidephoto">
+            <img src="https://i.pinimg.com/originals/fa/45/96/fa4596ad9a9d39901eeb455ed4f74e44.jpg" class="slidephoto" id="firstclone">
+        </div>
+    </div>
+
+    <div class="slideshow2">
+        <i class="fas fa-arrow-left" id="pre-btn2" class="button"></i>
+        <i class="fas fa-arrow-right" id="next-btn2" class="button"></i>
+        <div class="slide2">
+            <img src="https://images.unsplash.com/photo-1551123997-a7450dfc3639?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80;" class="slidephoto2" id="lastclone2">
+            <img src="https://images.unsplash.com/photo-1503532899220-c678a6808a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1530639177160-aed05ad4ed2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1557769566-657550c23a6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1460893330858-0c301e67cacf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1447953507315-6f265fb7aaa3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1477420143023-6a0e0b04b69a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1551123997-a7450dfc3639?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80;" class="slidephoto2">
+            <img src="https://images.unsplash.com/photo-1503532899220-c678a6808a63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="slidephoto2" id="firstclone2">
+        </div>
+    </div>
+    <footer>
+        <img id="payment" src="https://scontent.fcmb11-1.fna.fbcdn.net/v/t31.18172-8/21753309_1611838182213924_711515468205419696_o.png?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHStMwAGPUF7rSTEK9tiQEqoyHyzzqiVVqjIfLPOqJVWkeo7bKHcQIN-aJJ-nXLUWHdzXCbpQe-9Ovc-FkEd55O&_nc_ohc=xp0iXPKzuDwAX9XspGp&_nc_oc=AQnzvQUG3QeIm_athxRC3X74_5PinefdIkHwCG-EqCFOBJYq4lnfDzHVE_NUXQDSnY5an19TmEIfdjHEW_axsELX&_nc_ht=scontent.fcmb11-1.fna&oh=00_AfB7au_5cR5ri2yhQRWcu5gSLJeI1VhMwRsTA4GHqKSxVA&oe=645276D4" alt="payment">
+        <p id="copyright">&copy; 2023 Designer Brands. All rights reserved</p>
+        <p id="footerpara">For brand list, visit &nbsp;&nbsp;<a href="brands.html"> Brand </a>&nbsp;&nbsp; section — your one-stop shop for the latest in Shoes, Sandals, Dresses, Jeans and more! For more styles, visit  &nbsp;&nbsp;<a href="shoe.html"> Shoes </a> </p>
+    </footer>
+    <script>
+        let slideEl = document.querySelector(".slide");
+let images = document.querySelectorAll(".slide img");
+let counter = 1;
+let nextBtn = document.querySelector("#next-btn");
+let preBtn = document.querySelector("#pre-btn");
+let size = images[0].clientWidth;
+let autoSlideInterval;
+
+slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+
+nextBtn.addEventListener("click", () => {
+  if (counter >= images.length - 1) {
+    return;
+  }
+  slideEl.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+});
+
+preBtn.addEventListener("click", () => {
+  if (counter <= 0) {
+    return;
+  }
+  slideEl.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+});
+
+slideEl.addEventListener("transitionend", () => {
+  if (images[counter].id === "lastclone") {
+    slideEl.style.transition = "none";
+    counter = images.length - 2;
+    slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+  }
+  if (images[counter].id === "firstclone") {
+    slideEl.style.transition = "none";
+    counter = images.length - counter;
+    slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+  }
+});
+
+function autoSlide() {
+  autoSlideInterval = setInterval(() => {
+    if (counter >= images.length - 1) {
+      counter = 1;
+      slideEl.style.transition = "none";
+      slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+      counter++;
+    } else {
+      slideEl.style.transition = "transform 0.4s ease-in-out";
+      counter++;
+      slideEl.style.transform = "translateX(" + (-size * counter) + "px)";
+    }
+  }, 2500);
+}
+
+autoSlide();
+
+slideEl.addEventListener("mouseenter", () => {
+  clearInterval(autoSlideInterval);
+});
+
+slideEl.addEventListener("mouseleave", () => {
+  autoSlide();
+});
+
+
+let slideElnew = document.querySelector(".slide2");
+let imagesnew = document.querySelectorAll(".slide2 img");
+let counternew = 1;
+let nextBtnnew = document.querySelector("#next-btn2");
+let preBtnnew = document.querySelector("#pre-btn2");
+let sizenew = imagesnew[0].clientWidth;
+let autoSlideIntervalnew;
+
+slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+
+nextBtnnew.addEventListener("click", () => {
+  if (counternew >= imagesnew.length - 1) {
+    return;
+  }
+  slideElnew.style.transition = "transform 0.4s ease-in-out";
+  counternew++;
+  slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+});
+
+preBtnnew.addEventListener("click", () => {
+  if (counternew <= 0) {
+    return;
+  }
+  slideElnew.style.transition = "transform 0.4s ease-in-out";
+  counternew--;
+  slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+});
+
+slideElnew.addEventListener("transitionend", () => {
+  if (imagesnew[counternew].id === "lastclone2") {
+    slideElnew.style.transition = "none";
+    counternew = imagesnew.length - 2;
+    slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+  }
+  if (imagesnew[counternew].id === "firstclone2") {
+    slideElnew.style.transition = "none";
+    counternew = imagesnew.length - counternew;
+    slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+  }
+});
+
+function autoSlide2() {
+  autoSlideIntervalnew = setInterval(() => {
+    if (counternew >= imagesnew.length - 1) {
+      counternew = 1;
+      slideElnew.style.transition = "none";
+      slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+      counternew++;
+    } else {
+      slideElnew.style.transition = "transform 0.4s ease-in-out";
+      counternew++;
+      slideElnew.style.transform = "translateX(" + (-sizenew * counternew) + "px)";
+    }
+  }, 2500);
+}
+
+autoSlide2();
+
+slideElnew.addEventListener("mouseenter", () => {
+  clearInterval(autoSlideIntervalnew);
+});
+
+slideElnew.addEventListener("mouseleave", () => {
+  autoSlide2();
+});
+
+
+
+    </script>
+</body>
+</html>

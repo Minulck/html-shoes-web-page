@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/udygjet2oudwbzigz5ik">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    background-image: url(https://images.unsplash.com/photo-1508252568242-e0f383f753d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form{
+    padding-bottom: 20px;
+    margin-top:3%;
+    width: 25%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+h1{
+    font-size:60px;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(14, 218, 44);
+}
+label{
+    font-size: 25px;;
+    color:rgb(255, 255, 255);
+    margin:15px;
+    font-weight: bold;
+}
+.details{
+    display: flex;
+    justify-content: center;
+}
+#submit-btn{
+    background-color: cyan;
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    width: 120px;
+    margin: 15px 20px 0 0;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+}
+#submit-btn:hover,#reset-btn:hover{
+    box-shadow: 0 0 5px cyan,
+     0 0 25px cyan,0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan; 
+}
+#reset-btn{
+    background-color: cyan;
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    width: 120px;
+    margin: 15px 0 0 0;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    height:50px;
+
+}
+.userdetails{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:3px solid cyan;
+    font-size: 16px;
+    padding: 2px;;
+    height: 32px;
+}
+#gendercheck{
+    font-size: 22px;
+    color: rgb(248, 172, 172);
+    font-weight: ;
+}
+
+h4{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+#googleimg,#facebookimg{
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 1px whitesmoke,
+    0 0 15px whitesmoke;
+}
+#googleimg:hover,#facebookimg:hover{
+    box-shadow: 0 0 5px whitesmoke,
+    0 0 25px whitesmoke,0 0 50px whitesmoke, 0 0 100px whitesmoke, 0 0 200px whitesmoke;
+}
+#SOCIAL{
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: aliceblue;
+    display:flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(219, 219, 9);
+}
+a:hover{
+    color: lightseagreen;
+}
+#error{
+    height:35px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top:5px;
+    color: rgb(255, 255, 255);;
+}
+    </style>
+    <title>Shoe Palace</title>
+</head>
+<body>
+</body>
+<h2 id="error"></h3>
+<form action="" id="form">
+    <h1>Sign In</h1>
+    <label  class="details" for="name">Name :</label>
+    <input class="userdetails" type="text" name="name" id="username" placeholder="Enter Your Name" >
+    <label  class="details" for="email">Email :</label>
+    <input class="userdetails" type="email" name="email" id="useremail" placeholder="Enter Your Email" >
+    <label  class="details" for="gender">Gender :</label>
+    <label  class="details" id="gendercheck"><input type="radio" name="Gender" id="male">&nbsp;&nbsp;Male &nbsp; &nbsp; &nbsp;<input type="radio" name="Gender" id="female">&nbsp;&nbsp;Female </label>
+    <label  class="details" for="age">Age :</label>
+    <input class="userdetails" type="number" name="age" id="userage" placeholder="Enter Your Age">
+    <label class="details" for="password-label">Create Password :</label>
+    <input class="userdetails" type="password" name="password" id="password1" placeholder="Enter Your Password" >
+    <label class="details" for="password-label">Confirm Password :</label>
+    <input class="userdetails" type="password" name="password" id="password2" placeholder="Confirm Your Password" >
+    <label for="button" id="buttons">
+    <input type="submit" value="Submit" id="submit-btn" onclick="return validcheck()">
+    <input type="reset" value="Clear" id="reset-btn">
+    </label>
+    <h4>Or Sign in With</h4>
+    <div id="SOCIAL">  
+    <div id="googlr"><a href="https://myaccount.google.com/" target="_blank"><img id="googleimg" src="https://play-lh.googleusercontent.com/ldPUgkNFRrjQkwaCIJHONKoLWsqdOqeF5jAeX7DHWbw2OKYeB_uif4h2TosPEeRUT3Q" alt="googlelogin"></a></div><div id="facrbook"><a href="https://web.facebook.com/" target="_blank"><img src="https://www.unipile.com/wp-content/uploads/2022/06/logo-facebook-blanc.png" id="facebookimg" alt="facebooklogin"></a></div>
+    </div>
+    <p id="login">Already have an acoount ?<a href="login.html">&nbsp; Log In</a></p>
+    <br>
+    <p><a href="mainpage.html">BACK TO HOME</a></p>
+</form>
+<script>
+    let nameEl = document.getElementById("username");
+let emailEl = document.getElementById("useremail");
+let maleEl = document.querySelector("#male");
+let femaleEl = document.querySelector("#female");
+let ageEl = document.querySelector("#userage");
+let password1El = document.querySelector("#password1");
+let password2El = document.querySelector("#password2");
+let errorEl = document.getElementById("error");
+
+function validcheck(){
+    if (nameEl.value===""){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Please Enter Your User Name ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if(emailEl.value===""){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Please Enter Valid Email Address ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if(maleEl.checked==false && femaleEl.checked==false){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Please Select Your Gender ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if(ageEl.value===""){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Please Enter Your age ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if (ageEl.value<10){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Your Age is less Than 10.You Can't Sign in for this website ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if (password1El.value===""){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Please Enter Your password ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if(password2El.value===""){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Please Reenter Your password ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    else if(password1El.value!=password2El.value){
+        errorEl.style.backgroundColor = "rgb(255, 0, 0,0.60)";
+        errorEl.textContent="❕ Password do not match ❕";
+        setTimeout(function(){ errorEl.style.backgroundColor = "transparent"; errorEl.textContent = ""; }, 1500);
+        return false;
+    }
+    errorEl.style.backgroundColor = "transparent";
+    errorEl.textContent = "";
+    return true;
+} 
+</script>
+</body>
+</html>
